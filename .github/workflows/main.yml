@@ -10,7 +10,7 @@ jobs:
       issues: write  # 레이블 붙일 권한
     steps:
     - run: |
-        gh issue edit "$NUMBER" --add-label "triage"
+        gh issue edit "$NUMBER" --add-label "bug"
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GH_REPO: ${{ github.repository }}
